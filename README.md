@@ -10,5 +10,7 @@ or _decrypted appended to the end.
 For simplicity, all characters are converted to lowercase.
 
 USAGE: python ./Cipher.py (-e | -d) [-c | -p | -t] <file name> 
+
+
 Encryption(-e) or decryption(-d) flags are required, specifing algorithm is not. 
 
