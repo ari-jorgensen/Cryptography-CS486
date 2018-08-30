@@ -1,3 +1,5 @@
+# REPLACE WITH AN ALPHA-NUMERIC CIPHER?????
+
 # File: Transposition.py
 # Author: Ariana Jorgensen
 # For this particular algorithm, I 
@@ -22,6 +24,7 @@ def transEncrypt(line):
 			transLine[col] += line[pointer]
 			pointer += key
 	return ''.join(transLine)
+
 
 def transDecrypt(line):
 	numCols = math.ceil(len(line) / key)

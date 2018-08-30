@@ -10,7 +10,7 @@
 alpha = 'abcdefghijklmnopqrstuvwxyz'
 
 # Function to encrypt file using the 
-# Caesar cipher. Shift = 4
+# Caesar cipher. Shift = 3
 def caesarCipherEncrypt(line):
     caesarLine = ''
     caesarWord = ''
@@ -18,7 +18,7 @@ def caesarCipherEncrypt(line):
         for char in word:
             try:
                 char = char.lower()
-                ind = (alpha.index(char) + 4) % 26
+                ind = (alpha.index(char) + 3) % 26
                 caesarWord += alpha[ind]
             except ValueError:
                 caesarWord += char
@@ -27,7 +27,7 @@ def caesarCipherEncrypt(line):
     return caesarLine
 
 # Function to decrypt file that was encrypted
-# using the Caesar cipher. Shift = 4
+# using the Caesar cipher. Shift = 3
 def caesarCipherDecrypt(line):
     normalLine = ''
     normalWord = ''
@@ -35,7 +35,7 @@ def caesarCipherDecrypt(line):
         for char in word:
             try:
             	char = char.lower()
-                ind = (alpha.index(char) - 4) % 26
+                ind = (alpha.index(char) - 3) % 26
                 normalWord += alpha[ind]
             except ValueError:
                 normalWord += char
