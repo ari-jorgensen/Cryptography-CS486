@@ -1,10 +1,10 @@
 # File: Caesar.py
 # Author: Ariana Jorgensen
 # This program handles the encryption and decryption 
-# of a file using the Caesar cipher. I made the shift
-# a constant of 4, however this would technically
-# work with any shift # as I use mod 26 to ensure
-# that the index remains in the alphabet.
+# of a file using the Caesar cipher. I used the standard
+# shift value of 3 (as reported in the textbook). However,
+# this cipher would work for any shift value, as I use mod 
+# 26 to ensure that the index remains in the alphabet.
 # NOTE: For simplicity, all characters are converted to lowercase
 
 alpha = 'abcdefghijklmnopqrstuvwxyz'
